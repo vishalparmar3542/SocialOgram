@@ -19,7 +19,7 @@
             $row = mysqli_fetch_array($check_database_query) or die(mysqli_error($con));
             $username = $row['adminname'];
     
-            $user_closed_query = mysqli_query($con,"select * from admin where adminname='$Username' and user_closed='yes'");    
+            $user_closed_query = mysqli_query($con,"select * from admin where adminname='$Username' ");    //and user_closed='yes'
             $_SESSION['username'] = $username;
             header("Location: admin_home.php");
             exit();

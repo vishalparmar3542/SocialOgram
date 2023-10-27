@@ -17,7 +17,7 @@ include 'handlers/login_handler.php';
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wellcome to Ocean</title>
+    <title>SocialOgram</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/register.css">
@@ -40,7 +40,7 @@ include 'handlers/login_handler.php';
     </style>
 
 
-    <!-- favigon -->
+    <!-- favicon -->
     <link rel="shortcut icon" href="images/favigon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="assets/fontawesome-free-5.15.1-web/css/all.css">
 
@@ -49,7 +49,7 @@ include 'handlers/login_handler.php';
 <body>
    
     <div class="top-content">
-        <h1 style="font-size:35px;">Wellcome to Ocean, share your moments with friends!</h1>
+        <h1 style="font-size:35px;">Wellcome to SocialOgram, share your moments with friends!</h1>
         <p>Sign up and start sharing your photos and updates with your friends.
         </p>
         <hr style="width: 50%; color: white; margin-bottom:25px; margin-top:25px;">

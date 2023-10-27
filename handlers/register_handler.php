@@ -122,15 +122,15 @@
         //         array_push($error_array, "Your password can only contain english characters or numbers");
         //     }
         // }
-        
-        if(strlen($password > 31 || strlen($password) < 4)){
+        echo($password);
+        if(strlen($password) > 31 ||  strlen($password) < 4){
             array_push($error_array, "Your password must be between 5 and 30 characters or numbers");
         }
         
         if(empty($error_array)){
             // echo $password;
             
-            $password = $password;
+    
 
             if($gender == "Male"){
                 $profile_pic = "assets/images/profile_pics/defaults/male.png";

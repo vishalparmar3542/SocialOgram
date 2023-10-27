@@ -60,6 +60,7 @@
                     
                     echo "<span class='username'>@$username</span>";                
                 ?>
+                <a href="logout.php"><button>Logout</button></a>
                 <div class="btns" style="display: flex; margin: -15px 500px;">
                     <form action="#" method="POST"> 
                         <button class="message" name="send_msg"><i class="fas fa-comment-alt"></i> Message</button>

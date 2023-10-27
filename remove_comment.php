@@ -5,8 +5,8 @@
 <?php
 
     include 'session-file.php';
-    include 'database/classes/User.php';
-    include 'database/classes/Post.php'; 
+    include 'classes/User.php';
+    include 'classes/Post.php'; 
 
     $userLoggedIn = $_SESSION['username'];
     if(isset($_SESSION['username'])){

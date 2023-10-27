@@ -6,8 +6,8 @@
 <?php
 
     include 'session-file.php';
-    include 'database/classes/User.php';
-    include 'database/classes/Post.php'; 
+    include 'classes/User.php';
+    include 'classes/Post.php'; 
 
     $userLoggedIn = $_SESSION['username'];
     if(isset($_SESSION['username'])){
@@ -25,7 +25,7 @@
     {
         $user = $_POST['search'];
         $query = mysqli_query($con, "delete from users where username='$user'") or die("No User Found");
-        $post_query = mysqli_query($con, "delete from poste where added_by='$user'")or die("can not Delete posts");
+        $post_query = mysqli_query($con, "delete from posts where added_by='$user'")or die("can not Delete posts");
         if($query){
             echo "User $user is Deleted with his/her all posts";
         }
