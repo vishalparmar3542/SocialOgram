@@ -19,6 +19,7 @@
             
             if($uploadOk){
                 if(move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $imageName)){
+
                     //image Upload Okey
                     $errorMessage = "uploaded";
                 }
@@ -32,6 +33,8 @@
         if($uploadOk){
             $post = new Post($con, $userLoggedIn);
             $post->submitPost($_POST['post_text'], $imageName);
+            $_POST = array();
+            header("Location: http://localhost/socialOgram/index.php");
         }
         else{
             echo "<div style='text-align: center;' class='alert alert-danger'> $errorMessage </div>";
@@ -41,6 +44,7 @@
     $user_detail_query = mysqli_query($con,"select * from users where username='$userLoggedIn'");
     $user_array = mysqli_fetch_array($user_detail_query);
     $num_friends = (substr_count($user_array['friend_array'],","))-1;
+    
 
 ?>
 
@@ -116,10 +120,11 @@
                 <div class="post-footer">
                     <div class="p-fo-left">
                         <ul>
+                            <input type="text">
                             <input type="file" name="fileToUpload" id="fileToUpload"/>
                             <label for="fileToUpload"> <img src="assets/images/camera.png" alt="" height="30px"></i> </label>
                             <span class="tweet-error"></span>
-                            <input id="sub-btn" type="submit" name="post" value="SHARE">
+                            <button id="sub-btn" type="submit" name="post" value="SHARE">SHARE</button>
                         </ul>
                     </form>
                     </div>

@@ -37,6 +37,19 @@ include 'handlers/login_handler.php';
             overflow: hidden;
             margin: 0 0 0 525px;
         }
+       
+        @media only screen and (max-width: 700px) {
+            .wreper {
+               display: flex;
+              flex-direction:column;
+               align-items: center;
+               justify-content: center;
+            }
+
+            .hrlns{
+                display: none;
+            } 
+           }
     </style>
 
 
@@ -83,7 +96,7 @@ include 'handlers/login_handler.php';
             </div>
         </div>
 
-        <hr style="height:300px; color:white; margin-top:110px;">
+       <hr class="hrlns" style="height:300px; color:white; margin-top:110px;">
 
         <div class="signup-form">
             <div class="form-top-left">
