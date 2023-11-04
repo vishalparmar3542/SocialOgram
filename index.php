@@ -120,7 +120,7 @@
                 <div class="post-footer">
                     <div class="p-fo-left">
                         <ul>
-                            <input type="text">
+                            <!-- <input type="text"> -->
                             <input type="file" name="fileToUpload" id="fileToUpload"/>
                             <label for="fileToUpload"> <img src="assets/images/camera.png" alt="" height="30px"></i> </label>
                             <span class="tweet-error"></span>

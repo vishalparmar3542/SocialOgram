@@ -1,4 +1,4 @@
-<!-- Register Hendler.php^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+<!-- Register Hendler.php -->
 
 <?php 
     

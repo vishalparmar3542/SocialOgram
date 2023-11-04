@@ -85,7 +85,7 @@
         
 
         <a href="index.php"> <i class="fas fa-home fa-lg"></i></a>
-        <a href="messages.php"> <i class="fas fa-envelope fa-lg"></i></a>
+       <!-- <a href="messages.php"> <i class="fas fa-envelope fa-lg"></i></a> -->
         <?php    
             $message_obj = new Message($con, $userLoggedIn);
             $num_msg = $message_obj->getUnreadNumber();

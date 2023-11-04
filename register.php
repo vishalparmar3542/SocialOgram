@@ -42,8 +42,7 @@ include 'handlers/login_handler.php';
             .wreper {
                display: flex;
               flex-direction:column;
-               align-items: center;
-               justify-content: center;
+             
             }
 
             .hrlns{
@@ -62,7 +61,7 @@ include 'handlers/login_handler.php';
 <body>
    
     <div class="top-content">
-        <h1 style="font-size:35px;">Wellcome to SocialOgram, share your moments with friends!</h1>
+        <h1 style="font-size:35px;">Welcome to SocialOgram, share your moments with friends!</h1>
         <p>Sign up and start sharing your photos and updates with your friends.
         </p>
         <hr style="width: 50%; color: white; margin-bottom:25px; margin-top:25px;">
@@ -85,7 +84,9 @@ include 'handlers/login_handler.php';
                     <!-- Password -->
                         <label for="form-password">Password</label>
                         <span class="pswd_icon_bg"  onclick="log_pswd_toggale()"><i class="fa-regular fa-eye" id="pswd_show" style="margin: auto;"></i></span>
-                        <input type="password" id="login_pswd" name="log_password" placeholder="Password" required> <Br>
+                        <input type="password" id="login_pswd" name="log_password" placeholder="Password" required>
+                         </input>
+                         <Br>
                         
                     <!-- remember me -->
                     
@@ -205,13 +206,13 @@ include 'handlers/login_handler.php';
         </div>
     </div>
 
-    <hr style="color:white; margin-top:265px; width:40%;">
+    <hr style="color:white; margin-top:10px; width:40%;">
 
     <!-- Footer -->
     <footer>			
     	<div class="footer"> 
             <a style="text-decoration-line: none; color: #977AFF;" href="admin.php"><i class="fas fa-user-shield"></i> Admin? click here <i class="fas fa-arrow-right"></i></a>
-    		<p> ©2020 All Rights Reserved <BR> Website designed and developed by <strong><U>Sindhiya Mahesh</u></strong></p>
+    		<p> ©2023 All Rights Reserved <BR> Website designed and developed by <strong><U>Vishal and Bhanupratap</u></strong></p>
     	</div>
     </footer>
 
